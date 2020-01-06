@@ -1,0 +1,121 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.0.18-nt
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema rohi
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ rohi;
+USE rohi;
+
+--
+-- Table structure for table `rohi`.`details`
+--
+
+DROP TABLE IF EXISTS `details`;
+CREATE TABLE `details` (
+  `id` varchar(15) NOT NULL default '',
+  `surname` varchar(45) NOT NULL default '',
+  `other_names` varchar(50) NOT NULL default '',
+  `sex` varchar(7) NOT NULL default '',
+  `address` varchar(75) NOT NULL default '',
+  `occupation` varchar(45) NOT NULL default '',
+  `ethnic_group` varchar(20) NOT NULL default '',
+  `town` varchar(45) NOT NULL default '',
+  `dob` varchar(35) NOT NULL default '',
+  `nationality` varchar(45) NOT NULL default '',
+  `email` varchar(65) NOT NULL default '',
+  `phone_number` varchar(15) NOT NULL default '',
+  `religion` varchar(25) NOT NULL default '',
+  `civil_state` varchar(15) NOT NULL default '',
+  `next_of_kin` varchar(45) NOT NULL default '',
+  `next_of_kin_number` varchar(15) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rohi`.`details`
+--
+
+/*!40000 ALTER TABLE `details` DISABLE KEYS */;
+INSERT INTO `details` (`id`,`surname`,`other_names`,`sex`,`address`,`occupation`,`ethnic_group`,`town`,`dob`,`nationality`,`email`,`phone_number`,`religion`,`civil_state`,`next_of_kin`,`next_of_kin_number`) VALUES 
+ ('RS/01065','fatokimi','S.A','Male','Oda road Akure','civil servant','Yoruba','Akure','5October1955','Nigerian','Fatokimisa@yahoo.com','08034277423','christian','Married','Mrs. Fatokimi','08034277423'),
+ ('RS/02242','Adeyemi','Bukunola','Female','No. 2  Ademoagun street Akure','Student','Yoruba','Akure','7April1993','Nigerian','AdeyemiBukun@yahoo.com','08062463138','Christianity','Single','Mr. Adeyemi','08062463138'),
+ ('RS/07557','Adekola','Adetutu','Female','No. 2 Ireakari off Ibeke Orita','Civil Servant','Yoruba','Idanre','1July1980','Nigerian','Adekola_tutu@yahoo.com','08032632477','Christianity','Married','Mr. Adekola','08032632477'),
+ ('RS/08663','Baba','Abiodun','Male','No. 126 Oba adesida roada Akure','Banker','Yoruba','Kwara','3February1970','Nigerian','Abiodun09@yahoo.com','08055762600','Muslim','Married','Mrs. Fawziath Baba','07052582727'),
+ ('RS/11614','Amusa','Fatima','Female','137 Alagbaka quarter Akure','Trader','Yoruba','Ijebu remo','10October1966','Nigerian','Amusaf@yahoo.com','08025908106','Muslim','Married','Mr. Lateef Amusa','08025908106');
+INSERT INTO `details` (`id`,`surname`,`other_names`,`sex`,`address`,`occupation`,`ethnic_group`,`town`,`dob`,`nationality`,`email`,`phone_number`,`religion`,`civil_state`,`next_of_kin`,`next_of_kin_number`) VALUES 
+ ('RS/15473','Amusa','Sawaliu','Male','137 Alagbaka quarter Akure','Trader','Yoruba','Ijebu remo','11November1955','Nigerian','Amusas@yahoo.com','08025908106','Muslim','Married','Mrs. Amusa','08025908106'),
+ ('RS/17532','Martins','Segun Tolu','Male','NCCF secretariat Alagbaka','Student','Yoruba','Oyo','9January1964','Nigerian','TosinMartins@yahoo.com','08175111066','Christian','Single','Mr. Martins','08065574607'),
+ ('RS/41512','Zubair','Josephine','Female','Omoniyiowo along benin expressway. Akure','Civil servant','Edo','Edo','8April1963','Nigerian','Zubairj@yahoo.com','08185371946','christianity','Married','Mr. Zubair','08067464662'),
+ ('RS/42043','Adedayo','Taiwo','Female','home matters','Full house wife','oruba','Isaun','14October1993','Nigerian','Omotayewoejire@gmail.com','08166492432','Christianity','Married','Mr. Adedayo','08166492432'),
+ ('RS/43320','bhjyyd','yuvuytfv','Female','vhjvhuv,jh.h/i/uoiy','vhvgvc fg','vgvhm h','gvghvmgh','1January2016','ghvcfrtxdfcvbnvb','gyugyuuvy','hvgvgh','vgvghghv','Single','jvhghh g','ngv vghvgh');
+INSERT INTO `details` (`id`,`surname`,`other_names`,`sex`,`address`,`occupation`,`ethnic_group`,`town`,`dob`,`nationality`,`email`,`phone_number`,`religion`,`civil_state`,`next_of_kin`,`next_of_kin_number`) VALUES 
+ ('RS/46184','jinuhbt6ty','ftttgtynu','Female','tgthyuj','rftghyuihr','gtrtgyh','r5tghyju','1January2016','tf5rvtbyh','uygynmkiut','tghyujui','fgtbyunmikoj','Single','7ttghyuigq','rfvtgyhu'),
+ ('RS/46308','Aliu','Ronke','Female','No. 23 Ayetorostreet','Civil servant','Yoruba','Oba Akoko','7April1983','Nigerian','Ronke4real@yahoo.com','08034656498','Christianity','Married','Mr. Aliu','08035295988'),
+ ('RS/72710','gyghghuvhu','dcjngvhjf','Female','yufkglt8oiuklhgcx','gv nvyutfq','tgv nhjgS','hvh nbhg','1January2016','vyydtychfjh','djyvjhyfv','dthgvjhn jhng','hvjhbjkbuiy','Single','hjvhvjm q','VUUCTYCYRFG'),
+ ('RS/77074','Adedayo','Julius','Male','No. 8 Kajola off Akure high school','Teacher','Yoruba','Itegbola','22January1970','Nigerian','AdedayoJulius@yahoo.com','07062816124','Christianity','Married','Mrs. Adedayo','07062816124');
+/*!40000 ALTER TABLE `details` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `rohi`.`readings`
+--
+
+DROP TABLE IF EXISTS `readings`;
+CREATE TABLE `readings` (
+  `card_number` varchar(15) NOT NULL default '',
+  `blood_pressure` varchar(15) NOT NULL default '',
+  `pulse_rate` varchar(15) NOT NULL default '',
+  `respiration_rate` varchar(15) NOT NULL default '',
+  `temperature` varchar(15) NOT NULL default '',
+  `heart_rate` varchar(15) NOT NULL default '',
+  `report` text NOT NULL,
+  `dateEntered` varchar(45) NOT NULL default '',
+  `timeEntered` varchar(45) NOT NULL default '',
+  `id` int(10) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rohi`.`readings`
+--
+
+/*!40000 ALTER TABLE `readings` DISABLE KEYS */;
+INSERT INTO `readings` (`card_number`,`blood_pressure`,`pulse_rate`,`respiration_rate`,`temperature`,`heart_rate`,`report`,`dateEntered`,`timeEntered`,`id`) VALUES 
+ ('12:11:20 AM','RS/08663','110/90','76','66','66','45','good','2016-01-18',1),
+ ('RS/08663','110/90','45','44','77','65','weak','2016-01-18','12:15:13 AM',2),
+ ('RS/07557','120/90','87','56','43','35','cool','2016-01-18','08:10:15 AM',3),
+ ('RS/07557','150/66','46','55','77','36','NOT GOOD','2016-01-18','09:08:56 AM',4),
+ ('RS/02242','110/70','90','20','90','36','patient seen, said to have fainted after being beaten by mother using a coil of wire','2016-01-18','09:47:16 AM',5),
+ ('RS/01065','110/70','78','20','78','36.7','feels better, exercising regularly, has proper diet, had frantal headache.\nThe headcahe radiated to the back of the head.\nhas pores in the back, afebile not pale\n ','2016-01-05','03:42:37 PM',6),
+ ('RS/01065','110/70','78','20','78','36.7','pcm II tds, \nlexotan 1.5mg nocte *4/7,\nneurogesic balm, \nmoduretic I daily  *2/52,\namlodipine 5mg daily *2/52,\nclapidodrel *2/52','2016-01-05','03:52:57 PM',7),
+ ('RS/11614','100/70','78','20','78','37.8','high body temperature, cold, body and headache.\nc/o malaria and fever,\nplan: in diclophenac injection 75mg start,\nin antenatal injection 160mg daily *3/7,\ntab pcm IItds *3/7,\ntab b.co Itds *5/7,\ntab Vit. c  II tds *5/7,\ncap Amoxil  500mg tds*5/7\ntab laridox III start','2016-01-12','04:02:54 PM',8);
+INSERT INTO `readings` (`card_number`,`blood_pressure`,`pulse_rate`,`respiration_rate`,`temperature`,`heart_rate`,`report`,`dateEntered`,`timeEntered`,`id`) VALUES 
+ ('RS/15473','100/70','84','24','70','36','c/o difficulty with sleeping, cough which is more at night.\nfandred mildly pale ','2016-01-12','04:10:36 PM',9),
+ ('RS/15473','100/70','84','24','70','36','Lasix 60mg bd\naldactone 25mg daily\nvasoprim I daily\nb.co Ibd *5/7','2016-01-12','04:12:59 PM',10),
+ ('RS/15473','100/70','58','32','60','35.8','iv lasix 40mg start\noxygen for 30 mins\nbrought in the evening, ','2016-01-17','04:17:42 PM',11),
+ ('RS/41512','110/70','80','22','78','34.7','c/o completed antibiotics, does not feel too much better, had palpation smear 2 years ago.\nplan: amytryphyllin 25mg *1/52\npcm IItds *5/7\ngelucid IItds *5/7\nbuskopan Ibd *5/7','2016-01-16','01:26:49 PM',12),
+ ('RS/11614','150/90','78','22','80','36.5','fbs 125mld,\nc/o no complaints, has not being following the advise, afebile not pale\nmetforing 500mg bd\ndaonil 5mg I daily\nvasoprin  I d1ily\ncaptopril 12.5mg bd\nurinalysis:\nprotein +\nglucose -\npH 8 ','2016-01-18','01:35:15 PM',13);
+/*!40000 ALTER TABLE `readings` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
